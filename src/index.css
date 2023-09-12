@@ -24,8 +24,9 @@ code {
 
 .comment{
   color: gray;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
+  background-color: white;
 }
 
 .userInfo{
@@ -49,4 +50,9 @@ code {
 
 .card-text{
   font-size: 1em;
+}
+
+.card-footer{
+  background-color: white;
+  border-top: none;
 }
