@@ -1,27 +1,6 @@
 
 
-export function NavBar({showProfile, setShowProfile, showWebDetail, setShowWebDetail}){
-
-    const onProfileClick = () => {
-        console.log('onProfileClick');
-        console.log({showWebDetail});
-        console.log({showProfile});
-        if(!showProfile){
-            setShowWebDetail(false);
-            setShowProfile(true);
-        }
-    }
-
-    const onLogoClick = () => {
-        console.log('onLogoClick');
-        console.log({showWebDetail});
-        console.log({showProfile});
-        if(!showWebDetail){
-            setShowWebDetail(true);
-            setShowProfile(false);
-        }
-    }
-    
+export function NavBar({onProfileClick, onLogoClick}){
     
     return (
     <nav className="navbar bg-light">

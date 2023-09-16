@@ -15,15 +15,34 @@ function App() {
 
   console.log({searchValue});
 
+
+  const onProfileClick = () => {
+        console.log('onProfileClick');
+        console.log({showWebDetail});
+        console.log({showProfile});
+        if(!showProfile){
+            setShowWebDetail(false);
+            setShowProfile(true);
+        }
+    }
+
+    const onLogoClick = () => {
+        console.log('onLogoClick');
+        console.log({showWebDetail});
+        console.log({showProfile});
+        if(!showWebDetail){
+            setShowWebDetail(true);
+            setShowProfile(false);
+        }
+    }
+
   
   
   return (
     <>
       <NavBar
-        showProfile={showProfile} 
-        setShowProfile={setShowProfile} 
-        showWebDetail={showWebDetail}
-        setShowWebDetail={setShowWebDetail} />
+        onProfileClick={onProfileClick}
+        onLogoClick={onLogoClick} />
       {showProfile &&
       <Profile 
         avatar={"https://picsum.photos/id/237/200/200"}
