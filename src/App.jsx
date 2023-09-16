@@ -13,8 +13,6 @@ function App() {
 
   const [searchValue, setSearchValue] = useState(null);
 
-  console.log({searchValue});
-
 
   const onProfileClick = () => {
         console.log('onProfileClick');
